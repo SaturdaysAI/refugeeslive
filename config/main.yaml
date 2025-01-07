@@ -1,0 +1,45 @@
+### Main file
+# This file is intended to contain main execution parameters
+
+index_documents:
+  collection_name: rag-chatbot-refugees
+
+# Generate answers for chatbot evaluation
+generate_answers:
+  # Name of chatbot version
+  #version_name: llama3.1_8b_nf4_dq
+  #version_name: llama3.1_70b_nf4_dq_compute_fp16
+  #version_name: mistral0.3_7b_nf4_compute_fp16
+  #version_name: mistral0.3_8x7b_gptq_4bits
+  version_name: chatbot-refugees
+  store_path: reports/executions
+  params:
+    retrieval:
+      collection_name: rag-chatbot-refugees
+    llm_mode: local # api or local
+    llm: # when llm_mode is set to local
+      #model_name: mistralai/Mistral-7B-Instruct-v0.2
+      #model_name: meta-llama/Meta-Llama-3-8B-Instruct
+      #model_name: meta-llama/Llama-3.1-8B-Instruct
+      #model_name: meta-llama/Llama-3.1-70B-Instruct
+      model_name: mistralai/Mistral-7B-Instruct-v0.3
+      #model_name: mistralai/Mixtral-8x7B-Instruct-v0.1
+      #model_name: TheBloke/Mixtral-8x7B-Instruct-v0.1-GPTQ
+      #model_name: marinarosell/Meta-Llama-3-8B-Instruct-GPTQ-4bit-gs32
+      #model_name: marinarosell/Meta-Llama-3-8B-Instruct-GPTQ-8bit-gs32
+      #model_name: marinarosell/Mistral-7B-Instruct-v0.3-GPTQ-8bit-gs128
+      #revision: gptq-4bit-128g-actorder_True
+      revision: main
+      quantization_configs: Null
+        #load_in_8bit: True
+        #load_in_4bit: True
+        #bnb_4bit_quant_type: nf4
+        #bnb_4bit_use_double_quant: True
+        #bnb_4bit_compute_dtype: float16
+        #llm_int8_enable_fp32_cpu_offload: True
+    api: # when llm_mode is set to api
+      bedrock_model: meta.llama3-8b-instruct-v1:0
+
+evaluate:
+  answers:
+    chatbot: reports/executions/chatbot-refugees/answers.csv

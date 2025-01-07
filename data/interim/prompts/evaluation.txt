@@ -1,0 +1,7 @@
+You are to rate the meaning similarity of two texts as a float on the scale of 0-1, with 0 being completely different and 1 being the same meaning. Provide as answer only the float number, without any explanation. The two texts are the following, each one enclosed by []:
+
+[{reference}]
+
+[{chatbot}]
+
+Answer:

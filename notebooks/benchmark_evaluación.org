@@ -1,0 +1,282 @@
+#+EXPORT_FILE_NAME: ../reports/benchmark_evaluación
+#+LATEX_HEADER: \usepackage{parskip}
+#+PROPERTY: header-args :session python :results silent :dir ..
+#+OPTIONS: ^:nil toc:nil num:nil
+* Introducción
+
+Este documento sirve para hacer una comparativa de múltiples métodos y modelos
+de evaluación del chatbot de refugiados.
+
+* Metodología
+
+La conceptualización de esta comparativa se ha hecho considerando los
+siguientes factores para la evaluación del chatbot:
+
+- Que sea capaz de obtener y sintentizar información relevante de varias
+  fuentes para contestar a la pregunta
+- Que sea capaz de determinar cuándo no tiene suficiente información para dar
+  una respuesta a la pregunta
+- Que pueda gestionar múltiples idiomas
+
+Siendo así, se determina la siguiente metodología para hacer la comparación:
+
+1. Se parte de un set de datos de referencia, que consideren los factores
+   previamente mencionados, que contenga múltiples preguntas y sus respuestas
+   consideradas ideales.
+2. Se genera un set de datos de comparación, el cual, para cada pregunta,
+   contiene posibles respuestas. Cada una de ellas tiene un valor de similitud
+   asociado con la respuesta ideal, que puede oscilar entre 0 (ninguna
+   similitud) y 1 (similitud perfecta). Se asemeja esta similitud al valor de
+   idoneidad de la pregunta.[fn:1]
+3. Se ejecuta un flujo de datos para cada método y modelo, en el cual se valora
+   la similitud entre la respuesta ideal del set de datos de referencia y cada
+   una de las respuestas del set de datos de comparación.
+4. Se evalúan los resultados para determinar qué método y modelo valoran de
+   modo más parecido a la puntuación del set de datos de comparativa; el que lo
+   haya hecho, será el método y modelo utilizados para evaluar todas las
+   iteraciones del desarrollo del chatbot.
+
+Este documento parte de los 3 primeros puntos realizados, por lo que únicamente
+se encarga de la interpretación de resultados y la conclusión. Aún así, tanto
+los sets de datos referidos en los puntos 1 y 2, como el código del punto 3,
+residen en el repositorio del proyecto.
+
+Los principales métodos considerados son los siguientes:
+
+- [[https://www.deepset.ai/blog/generative-llm-evaluation-rag][Semantic Answer Similarity]]
+- [[https://scribe.rip/how-to-measure-the-success-of-your-rag-based-llm-system-874a232b27eb][Evaluación via LLM]]
+
+Cada uno de los métodos puede utilizar por debajo múltiples modelos de lenguaje
+(LLM), y las prestaciones en cada caso pueden variar significativamente en
+función de éstos. Es por este motivo que se comparan múltiples opciones para
+considerar definitivamente la que mejor se adapta al caso de uso.
+
+* Comparativa
+
+** Lectura de datos
+
+Se parte del archivo de resultados: para cada pregunta y respuesta del set de
+pruebas, el valor de similitud entre la respuesta ideal y la respuesta de
+prueba, para todos los métodos/modelos a comparar.
+
+En primer lugar, se lee el archivo mencionado, y se combina con el archivo de
+puntuación de similitud esperada para cada respuesta:
+
+#+begin_src python
+import pandas as pd
+df = pd.read_csv('reports/metrics/details/benchmark_evaluation.csv')
+df = df.rename(columns={'chatbot': 'answer'})
+df_vals = pd.read_csv('data/processed/benchmark_evaluation.csv', delimiter='|')
+df = df_vals.merge(df, on=['question', 'answer'])
+df_ref = pd.read_csv('data/processed/ground_truth.csv', delimiter='|')
+df = df.merge(df_ref.drop(columns='answer'), on=['question'], how='left')
+#+end_src
+
+** Cómputo del error
+
+A continuación, en vez de interpretar directamente el valor de similitud de
+cada método/modelo, se considera la diferencia de este valor con respecto al
+esperado:
+
+#+begin_src python
+main_cols = ['question', 'reference', 'answer', 'similarity',
+             'language', 'context']
+metrics = list(set(list(df.columns)).difference(set(main_cols)))
+metrics_new_names = [col.split('_')[0] + '_' + col.split(
+    '/')[-1].split('-')[0] for col in metrics]
+rename_metrics = dict(zip(metrics, metrics_new_names))
+df = df.rename(columns=rename_metrics)
+metrics = metrics_new_names
+for metric in metrics:
+    df[metric + '_error'] = df[metric] - df['similarity']
+#+end_src
+
+** Distribución de errores
+
+Se analiza la distribución del error para los distintos métodos:
+
+#+begin_src python :exports results :results file replace
+import numpy as np
+import matplotlib.pyplot as plt
+filename = 'reports/figures/error_distribution.png'
+plot_data = []
+labels = []
+for metric in metrics:
+    col_name = metric + '_error'
+    labels.append(metric)
+    group_data = np.array(df[col_name])
+    plot_data.append(group_data)
+plt.boxplot(plot_data, labels=labels, showfliers=False)
+plt.title('Distribución del error')
+plt.xticks(rotation=90)
+plt.tight_layout()
+plt.savefig(filename)
+plt.clf()
+filename
+#+end_src
+
+#+RESULTS:
+[[file:..]]
+
+A la luz de estos resultados, se constata que los modelos de Falcon y Vicuna en
+el método de evaluación via LLM presentan resultados muy malos; claramente no
+es por la implementación del método, ya que el modelo Mistral presenta buenas
+capacidades.
+
+Siendo así, se descartan estas dos opciones. Para el resto, se procura analizar
+más en detalle su rendimiento.
+
+** Resultados por grupo
+
+Se calcula la desviación estándar de los errores, junto con la
+métrica RMSE para cada uno de los métodos/modelos, considerando los distintos
+grupos de preguntas:
+
+#+begin_src python :exports results :results value table replace
+import re
+groups = ['context', 'language', 'similarity']
+metrics = [m for m in metrics if not re.match('^.*(vicuna|falcon)', m)]
+df_groups = pd.DataFrame()
+for metric in metrics:
+    for group in groups:
+        df_rmse = df.groupby(group)[metric + '_error'].apply(
+            lambda x: np.sqrt(np.mean(x ** 2)).round(3)).reset_index().rename(
+                columns={metric + '_error': 'rmse'})
+        df_std = df.groupby(group)[metric + '_error'].apply(
+            lambda x: np.std(x).round(3)).reset_index().rename(
+                columns={metric + '_error': 'std'})
+        df_group = df_rmse.merge(df_std, on=group)
+        df_group = df_group.rename(columns={group: 'value'})
+        df_group['group'] = group
+        df_group['metric'] = metric
+        df_groups = pd.concat([df_groups, df_group])
+df_groups = df_groups[['metric', 'group', 'value', 'rmse', 'std']]
+df_groups = df_groups.sort_values(['group', 'value', 'rmse'])
+[list(df_groups)] + [None] + df_groups.values.tolist()
+#+end_src
+
+#+RESULTS:
+| metric                                    | group      |   value |  rmse |   std |
+|-------------------------------------------+------------+---------+-------+-------|
+| LLM_Mistral-7B-Instruct-v0.1              | context    |   False | 0.178 | 0.177 |
+| SAS_paraphrase-multilingual-MiniLM-L12-v2 | context    |   False | 0.193 | 0.187 |
+| SAS_multi-qa-MiniLM-L6-cos-v1             | context    |   False | 0.285 | 0.258 |
+| SAS_all-MiniLM-L12-v2                     | context    |   False |  0.29 | 0.256 |
+| SAS_paraphrase-multilingual-MiniLM-L12-v2 | context    |    True | 0.176 | 0.176 |
+| SAS_all-MiniLM-L12-v2                     | context    |    True | 0.191 | 0.191 |
+| SAS_multi-qa-MiniLM-L6-cos-v1             | context    |    True | 0.218 | 0.217 |
+| LLM_Mistral-7B-Instruct-v0.1              | context    |    True | 0.248 | 0.241 |
+| SAS_paraphrase-multilingual-MiniLM-L12-v2 | language   | Español | 0.208 | 0.208 |
+| LLM_Mistral-7B-Instruct-v0.1              | language   | Español | 0.271 | 0.266 |
+| SAS_all-MiniLM-L12-v2                     | language   | Español | 0.277 | 0.259 |
+| SAS_multi-qa-MiniLM-L6-cos-v1             | language   | Español | 0.298 | 0.275 |
+| SAS_all-MiniLM-L12-v2                     | language   |  Inglés | 0.149 | 0.149 |
+| SAS_paraphrase-multilingual-MiniLM-L12-v2 | language   |  Inglés |  0.15 |  0.15 |
+| SAS_multi-qa-MiniLM-L6-cos-v1             | language   |  Inglés | 0.156 | 0.155 |
+| LLM_Mistral-7B-Instruct-v0.1              | language   |  Inglés | 0.182 | 0.178 |
+| SAS_paraphrase-multilingual-MiniLM-L12-v2 | similarity |     0.0 | 0.096 | 0.071 |
+| LLM_Mistral-7B-Instruct-v0.1              | similarity |     0.0 | 0.101 | 0.093 |
+| SAS_all-MiniLM-L12-v2                     | similarity |     0.0 | 0.254 | 0.163 |
+| SAS_multi-qa-MiniLM-L6-cos-v1             | similarity |     0.0 | 0.277 | 0.181 |
+| SAS_paraphrase-multilingual-MiniLM-L12-v2 | similarity |    0.25 | 0.185 | 0.144 |
+| SAS_all-MiniLM-L12-v2                     | similarity |    0.25 | 0.187 | 0.133 |
+| SAS_multi-qa-MiniLM-L6-cos-v1             | similarity |    0.25 | 0.209 | 0.138 |
+| LLM_Mistral-7B-Instruct-v0.1              | similarity |    0.25 |  0.26 |  0.26 |
+| SAS_all-MiniLM-L12-v2                     | similarity |     0.5 | 0.252 |  0.21 |
+| SAS_paraphrase-multilingual-MiniLM-L12-v2 | similarity |     0.5 | 0.269 | 0.234 |
+| SAS_multi-qa-MiniLM-L6-cos-v1             | similarity |     0.5 |  0.27 |  0.22 |
+| LLM_Mistral-7B-Instruct-v0.1              | similarity |     0.5 | 0.398 | 0.369 |
+| SAS_all-MiniLM-L12-v2                     | similarity |    0.75 | 0.217 | 0.202 |
+| SAS_paraphrase-multilingual-MiniLM-L12-v2 | similarity |    0.75 | 0.221 | 0.213 |
+| SAS_multi-qa-MiniLM-L6-cos-v1             | similarity |    0.75 | 0.229 | 0.213 |
+| LLM_Mistral-7B-Instruct-v0.1              | similarity |    0.75 |  0.26 | 0.238 |
+| LLM_Mistral-7B-Instruct-v0.1              | similarity |     1.0 | 0.173 | 0.171 |
+| SAS_all-MiniLM-L12-v2                     | similarity |     1.0 | 0.173 | 0.171 |
+| SAS_paraphrase-multilingual-MiniLM-L12-v2 | similarity |     1.0 | 0.173 | 0.171 |
+| SAS_multi-qa-MiniLM-L6-cos-v1             | similarity |     1.0 | 0.174 | 0.171 |
+
+De este análisis de las métricas agrupadas se puede obtener lo siguiente:
+
+- Parece ser que para cualquier método (SAS o basado en LLM ), la evaluación es
+  más precisa cuando el idioma es el inglés. Esto es lógico, dado que
+  probablemente la mayoría de contenido con el que han sido entrenados los LLM
+  es el inglés.
+- Como es lógico, independientemente del método y del modelo, los casos
+  extremos son más fáciles de evaluar, mientras que los intermedios conllevan
+  más error.
+- El rendimiento es parecido si se comparan preguntas dentro del contexto
+  contra preguntas fuera de contexto
+
+** Resultados globales
+
+Se calcula la desviación estándar de los errores, junto con la
+métrica RMSE para cada uno de los métodos/modelos:
+
+#+begin_src python :exports results :results value table replace
+results = []
+for metric in metrics:
+    rmse = np.sqrt(np.mean(df[metric + '_error'] ** 2)).round(3)
+    std = np.std(df[metric + '_error']).round(3)
+    metric_result = {'metric': metric, 'rmse': rmse, 'std': std}
+    results.append(metric_result)
+df_results = pd.DataFrame(results).sort_values('rmse')
+[list(df_results)] + [None] + df_results.values.tolist()
+#+end_src
+
+#+RESULTS:
+| metric                                    |  rmse |   std |
+|-------------------------------------------+-------+-------|
+| SAS_paraphrase-multilingual-MiniLM-L12-v2 | 0.181 | 0.181 |
+| SAS_all-MiniLM-L12-v2                     | 0.222 | 0.218 |
+| LLM_Mistral-7B-Instruct-v0.1              | 0.231 | 0.227 |
+| SAS_multi-qa-MiniLM-L6-cos-v1             | 0.238 | 0.233 |
+| LLM_falcon-7b-instruct                    | 0.462 | 0.461 |
+| LLM_vicuna-7b-v1.5                        | 0.465 | 0.441 |
+
+Teniendo en cuenta que los valores de similitud oscilan entre 0 y 1, un RMSE <
+0.2 se puede considerar un valor aceptable para el problema en
+cuestión. Teniendo en cuenta que las evaluaciones del chatbot definitivas se
+harán con 100 preguntas, hará que la métrica de evaluación de éstos se acerque
+a su calidad real[fn:2].
+
+** Decisión final
+
+A la luz de los resultados, parece ser que el método y modelo que más se
+asemeja a la valoración humana es:
+
+#+begin_center
+Método: *Semantic Answer Similarity*
+#+end_center
+
+#+begin_center
+Modelo: *paraphrase-multilingual-MiniLM-L12-v2*
+#+end_center
+
+
+Esto es una buena noticia a nivel de agilidad, ya que la evaluación[fn:3] con el
+método /SAS/ oscila entre 10-20 minutos, mientras que con el método basado en LLM
+oscila entre 2 y 3 horas.
+
+* Footnotes
+
+[fn:1] Este valor es claramente subjetivo. Aun así, se ha procurado seguir un
+patrón lógico para generar estas respuestas:
+
+- Valor 0: Respuesta fuera del contexto del problema y sin relación a la
+  pregunta.
+- Valor 0.25: Respuesta dentro del contexto del problema pero sin relación a
+  la pregunta.
+- Valor 0.5: Respuesta con relación a la pregunta, pero no del todo correcta
+  (genérica, omitiendo información relevante, etc.).
+- Valor 0.75: Respuesta con relación a la pregunta y correcta, pero no perfecta
+  (omisión de detalles, poco clara, etc.).
+- Valor 1: Respuesta idéntica a la respuesta ideal.
+
+[fn:2] Tal y como se ha definido según el método de evaluación
+
+[fn:3] Con el set de datos de prueba de 424 respuestas
+# Local variables:
+# org-babel-python-command: "~/Documents/Projects/saturdays_ai/.venv/bin/python"
+# org-confirm-babel-evaluate: nil
+# ispell-local-dictionary: "es"
+# End:
