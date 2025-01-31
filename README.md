@@ -1,4 +1,7 @@
-# Refugee chatbot
+# Refugees AI: Empowering New Beginnings
+
+![image](https://github.com/user-attachments/assets/6834d2c5-b3a1-4745-8096-d865d77a89be)
+
 
 This is the code used by the *refugee chatbot*.
 
