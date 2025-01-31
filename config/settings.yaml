@@ -1,0 +1,66 @@
+### Settings file
+# This file is intended to contain specific project parameters
+
+# Global settings
+global:
+
+  logging:
+    formatter:
+      format: '%(asctime)s - %(message)s'
+      time_format: '%Y-%m-%d %H:%M:%S'
+    level: DEBUG
+    file: data/logs/{exec_name}.log
+
+  paths:
+    reference_dataset: data/processed/ground_truth.csv
+
+# Specific pipeline settings
+index_documents:
+  model_name: data/models/models--sentence-transformers--multi-qa-MiniLM-L6-cos-v1/snapshots/2d981ed0b0b8591b038d472b10c38b96016aab2e
+  documents:
+    path: data/raw
+    glob: '*.txt'
+  text_splitter:
+    chunk_size: 500
+    chunk_overlap: 100
+  persist_directory: data/interim/vectorstore
+
+generate_answers:
+  module: src.models.chatbot.RAGRefugeesChatbot.answer_question
+  params:
+    default_answer: Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.
+    retrieval:
+      model_name: data/models/models--sentence-transformers--multi-qa-MiniLM-L6-cos-v1/snapshots/2d981ed0b0b8591b038d472b10c38b96016aab2e
+      persist_directory: data/interim/vectorstore
+    llm:
+      pipeline:
+        temperature: 0.2
+        repetition_penalty: 1.1
+        return_full_text: True
+        max_new_tokens: 1000
+        do_sample: True
+    prompts:
+      generation: data/interim/prompts/generation.txt
+      context: data/interim/prompts/context.txt
+    # Regular expression/s to detect positive/negative cases
+    context_response:
+      positive: True
+      #regexp: .*[Ll]a pregunta( ".*")* (pertenece|se relaciona).*
+      regexp: ^\s*(sí|Sí|Quizá|quizá)\b
+
+evaluate:
+  specifics:
+    LLM:
+      prompt_filename: data/interim/prompts/evaluation.txt
+      max_tokens: 25
+      default_value: 0.5
+  models:
+    SAS:
+      - sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  results:
+    global: reports/metrics/evaluation.json
+    details: reports/metrics/details
+    stats: reports/metrics/stats
+
+api:
+  bedrock_model: meta.llama3-8b-instruct-v1:0

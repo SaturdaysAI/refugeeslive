@@ -1,0 +1,425 @@
+question|answer|similarity
+¿Puedo ser considerado refugiado?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Puedo ser considerado refugiado?|El problema de los refugiados es importante.|0.25
+¿Puedo ser considerado refugiado?|Debe estar fuera de su país|0.5
+¿Puedo ser considerado refugiado?|Para ser considerado refugiado, debe estar fuera de su país por temor a ser perseguido|0.75
+¿Puedo ser considerado refugiado?|Para ser considerado refugiado, debe encontrarse fuera de su país por temor a ser perseguido por motivos no económicos (por ejemplo, de raza, religión, nacionalidad, pertenencia a un grupo social, opiniones políticas, género u orientación sexual)|1.0
+¿Puedo tener asilo o protección subsidiaria?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Puedo tener asilo o protección subsidiaria?|El problema de los refugiados es importante.|0.25
+¿Puedo tener asilo o protección subsidiaria?|Puedes si no eres refugiado|0.5
+¿Puedo tener asilo o protección subsidiaria?|Sí, si tienes riesgo al volver a tu país|0.75
+¿Puedo tener asilo o protección subsidiaria?|Podrías tenerlo si al regresar a tu país de origen tuvieras riesgo real de sufrir daños, aunque no seas refugiado.|1.0
+¿Puedo ser deportado o deportada si he solicitado asilo?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Puedo ser deportado o deportada si he solicitado asilo?|El problema de los refugiados es importante.|0.25
+¿Puedo ser deportado o deportada si he solicitado asilo?|No.|0.5
+¿Puedo ser deportado o deportada si he solicitado asilo?|No, no se puede si se ha solicitado asilo.|0.75
+¿Puedo ser deportado o deportada si he solicitado asilo?|No. Hasta que haya una decisión definitiva, no se puede deportar a una persona que ha solicitado asilo.|1.0
+¿Dónde puedo solicitar asilo o protección internacional en España?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Dónde puedo solicitar asilo o protección internacional en España?|El problema de los refugiados es importante.|0.25
+¿Dónde puedo solicitar asilo o protección internacional en España?|Tanto dentro de España como en algunos sitios fuera.|0.5
+¿Dónde puedo solicitar asilo o protección internacional en España?|Puedes hacerlo en los puertos, en los CIES, y en las comisarías de policía autorizadas.|0.75
+¿Dónde puedo solicitar asilo o protección internacional en España?|Puedes hacerlo en los puestos fronterizos, en aeropuertos y puertos internacionales. También en el CIE. Dentro del territorio español, en las comisarías de policía autorizadas, Oficinas de Extranjería y OAR (Oficina de Asilo y Refugio).|1.0
+¿Puedo solicitar asilo o protección internacional fuera de España?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Puedo solicitar asilo o protección internacional fuera de España?|El problema de los refugiados es importante.|0.25
+¿Puedo solicitar asilo o protección internacional fuera de España?|Sí.|0.5
+¿Puedo solicitar asilo o protección internacional fuera de España?|Sí, para ello tiene que dirigirse a las autoridades españolas.|0.75
+¿Puedo solicitar asilo o protección internacional fuera de España?|Sí, es necesario que se dirija a las autoridades de la Representación diplomática española alegando un peligro para su integridad física. Los Embajadores respectivos podrán promover su traslado a España para permitir la presentación de su solicitud.|1.0
+¿Qué sucede al presentar la solicitud?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Qué sucede al presentar la solicitud?|El problema de los refugiados es importante.|0.25
+¿Qué sucede al presentar la solicitud?|La persona es informada acerca del proceso.|0.5
+¿Qué sucede al presentar la solicitud?|En el momento de efectuar la solicitud, la persona extranjera será informada de el procedimiento que debe seguirse, juntamente con sus derechos y obligaciones.|0.75
+¿Qué sucede al presentar la solicitud?|En el momento de efectuar la solicitud, la persona extranjera será informada, en una lengua que pueda comprender, acerca de: a) El procedimiento que debe seguirse y del carácter confidencial de éste. b) Sus derechos y obligaciones durante la tramitación, en especial en materia de plazos y medios. c) La posibilidad de contactar con el Alto Comisionado de las Naciones Unidas para los Refugiados y con las Organizaciones no Gubernamentales legalmente reconocidas entre cuyos objetivos figure el asesoramiento y ayuda a las personas necesitadas de protección internacional. d) Las posibles consecuencias del incumplimiento de sus obligaciones o de su falta de colaboración con las autoridades. e) Los derechos y prestaciones sociales a los que tiene acceso en su condición de solicitante de protección internacional.|1.0
+¿Qué pasa si no puedo ir presencialmente a hacer la solicitud?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Qué pasa si no puedo ir presencialmente a hacer la solicitud?|El problema de los refugiados es importante.|0.25
+¿Qué pasa si no puedo ir presencialmente a hacer la solicitud?|Puede ir otro día.|0.5
+¿Qué pasa si no puedo ir presencialmente a hacer la solicitud?|Puede ir otra persona.|0.75
+¿Qué pasa si no puedo ir presencialmente a hacer la solicitud?|Puede ir una persona que lo represente. En este último caso, el solicitante deberá ratificar la petición una vez desaparezca el impedimento.|1.0
+¿Dónde tengo que ir para obtener asistencia?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Dónde tengo que ir para obtener asistencia?|El problema de los refugiados es importante.|0.25
+¿Dónde tengo que ir para obtener asistencia?|En el siguiente enlace hay información: https://help.unhcr.org/spain/donde-encontrar-ayuda-espana/asistencia-legal/|0.5
+¿Dónde tengo que ir para obtener asistencia?|Hay organizaciones que proporcionan asistencia, más información en: https://help.unhcr.org/spain/donde-encontrar-ayuda-espana/asistencia-legal/|0.75
+¿Dónde tengo que ir para obtener asistencia?|Los solicitantes de protección internacional tendrán derecho a asistencia sanitaria y a asistencia jurídica gratuita por parte del estado. A parte, hay organizaciones que proporcionan asistencia jurídica gratuita y orientación acerca del procedimiento de asilo español, así como servicios de asistencia social, búsqueda de empleo, vivienda… En este enlace puedes encontrar algunas ONG en las que puede encontrar ayuda y orientación: https://help.unhcr.org/spain/donde-encontrar-ayuda-espana/asistencia-legal/|1.0
+¿Cómo puedo reunirme con mi família si está en nuestro país de origen?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Cómo puedo reunirme con mi família si está en nuestro país de origen?|El problema de los refugiados es importante.|0.25
+¿Cómo puedo reunirme con mi família si está en nuestro país de origen?|ACNUR puede ayudar.|0.5
+¿Cómo puedo reunirme con mi família si está en nuestro país de origen?|La Oficina de ACNUR en España podrá ayudar en función del país de origen en el que se encuentren los familiares|0.75
+¿Cómo puedo reunirme con mi família si está en nuestro país de origen?|Si se le ha reconocido como refugiado o beneficiaria de protección subsidiaria, la Oficina de ACNUR en España podrá ayudar en función del país de origen en el que se encuentren los familiares, en los trámites necesarios para llevarla a cabo.|1.0
+¿Cómo puedo regresar a mi país de origen?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Cómo puedo regresar a mi país de origen?|El problema de los refugiados es importante.|0.25
+¿Cómo puedo regresar a mi país de origen?|Acudiendo a las autoridades.|0.5
+¿Cómo puedo regresar a mi país de origen?|Debe acudir a las autoridades españolas de asilo para recibir información.|0.75
+¿Cómo puedo regresar a mi país de origen?|Si se le ha reconocido como refugiado o beneficiaria de protección subsidiaria,debe acudir a las autoridades españolas de asilo para recibir información de los trámites y programas existentes en España para el retorno voluntario.|1.0
+¿Puedo reasentarme en España?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Puedo reasentarme en España?|El problema de los refugiados es importante.|0.25
+¿Puedo reasentarme en España?|Es posible reasentarse.|0.5
+¿Puedo reasentarme en España?|Sí. Para más información, ver: https://www.acnur.org/es-es/acnur-en-espana/nuestro-trabajo|0.75
+¿Puedo reasentarme en España?|España acordará anualmente el número de personas que podrán ser objeto de reasentamiento en España. Para más información, ver: https://www.acnur.org/es-es/acnur-en-espana/nuestro-trabajo|1.0
+¿Cuando solicito la condición de refugiado, asilo o subvención?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Cuando solicito la condición de refugiado, asilo o subvención?|El problema de los refugiados es importante.|0.25
+¿Cuando solicito la condición de refugiado, asilo o subvención?|Sin demora.|0.5
+¿Cuando solicito la condición de refugiado, asilo o subvención?|Debe comparecer personalmente a los lugares reglamentarios sin demora y en todo caso en el plazo máximo de un mes.|0.75
+¿Cuando solicito la condición de refugiado, asilo o subvención?|Debe comparecer personalmente a los lugares reglamentarios sin demora y en todo caso en el plazo máximo de un mes desde la entrada en el territorio español o, en todo caso, desde que se produzcan los acontecimientos que justifiquen el temor fundado de persecución o daños graves.|1.0
+¿Cuáles son mis derechos como solicitante?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Cuáles son mis derechos como solicitante?|El problema de los refugiados es importante.|0.25
+¿Cuáles son mis derechos como solicitante?|Los derechos como solicitante son varios.|0.5
+¿Cuáles son mis derechos como solicitante?|A ser documentado como solicitante de protección internacional, a asistencia jurídica gratuita e intérprete, y a la no extradición.|0.75
+¿Cuáles son mis derechos como solicitante?|a) a ser documentado como solicitante de protección internacional; b) a asistencia jurídica gratuita e intérprete; c) a que se comunique su solicitud al ACNUR; d) a la suspensión de cualquier proceso de devolución, expulsión o extradición que pudiera afectar al solicitante; e) a conocer el contenido del expediente en cualquier momento; f) a la atención sanitaria en las condiciones expuestas; g) a recibir prestaciones sociales específicas en los términos que se recogen en esta Ley.|1.0
+¿Cuáles son mis obligaciones como solicitante?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Cuáles son mis obligaciones como solicitante?|El problema de los refugiados es importante.|0.25
+¿Cuáles son mis obligaciones como solicitante?|Las obligaciones como solicitante son varias.|0.5
+¿Cuáles son mis obligaciones como solicitante?|Cooperar con las autoridades españolas en el procedimiento, presentar todos aquellos elementos para su solicitud y a comparecer ante las autoridades.|0.75
+¿Cuáles son mis obligaciones como solicitante?|a) cooperar con las autoridades españolas en el procedimiento para la concesión de protección internacional; b) presentar, lo antes posible, todos aquellos elementos que, junto a su propia declaración, contribuyan a fundamentar su solicitud. Entre otros, podrán presentar la documentación de que dispongan sobre su edad, pasado –incluido el de parientes relacionados–, identidad, nacionalidad o nacionalidades, lugares de anterior residencia, solicitudes de protección internacional previas, itinerarios de viaje, documentos de viaje y motivos por los que solicita la protección; c) proporcionar sus impresiones dactilares, permitir ser fotografiados y, en su caso, consentir que sean grabadas sus declaraciones, siempre que hayan sido previamente informados sobre este último extremo; d) informar sobre su domicilio en España y cualquier cambio que se produzca en él; e) informar, asimismo, a la autoridad competente o comparecer ante ella, cuando así se les requiera con relación a cualquier circunstancia de su solicitud.|1.0
+¿Cuánto tiempo tengo que esperar a que se resuelva la solicitud?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Cuánto tiempo tengo que esperar a que se resuelva la solicitud?|El problema de los refugiados es importante.|0.25
+¿Cuánto tiempo tengo que esperar a que se resuelva la solicitud?|Varios meses.|0.5
+¿Cuánto tiempo tengo que esperar a que se resuelva la solicitud?|El periodo de resolución son seis meses.|0.75
+¿Cuánto tiempo tengo que esperar a que se resuelva la solicitud?|El periodo de resolución es de seis meses. Si en este tiempo no se ha notificado la resolución, se entiende que ha sido desestimada.|1.0
+¿Cómo se comunica la resolución de la solicitud?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Cómo se comunica la resolución de la solicitud?|El problema de los refugiados es importante.|0.25
+¿Cómo se comunica la resolución de la solicitud?|Se notificará de varias formas.|0.5
+¿Cómo se comunica la resolución de la solicitud?|A efectos de comunicaciones y notificaciones, se tendrá en cuenta el último domicilio o residencia que conste en el expediente.|0.75
+¿Cómo se comunica la resolución de la solicitud?|A efectos de comunicaciones y notificaciones, se tendrá en cuenta el último domicilio o residencia que conste en el expediente. Cuando no prospere este procedimiento de notificación, el trámite se realizará a través del Portal del Ciudadano, del portal electrónico de la Oficina de Asilo y Refugio y de los tablones de anuncios, accesibles al público, de la Comisaría de Policía correspondiente o de la Oficina de Extranjeros de la provincia en que conste el último lugar de residencia de la persona solicitante y, en todo caso, de la Oficina de Asilo y Refugio.|1.0
+¿Qué familiares pueden beneficiarse de mi condición de refugiado?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Qué familiares pueden beneficiarse de mi condición de refugiado?|El problema de los refugiados es importante.|0.25
+¿Qué familiares pueden beneficiarse de mi condición de refugiado?|Hay varios familiares que pueden beneficiarse.|0.5
+¿Qué familiares pueden beneficiarse de mi condición de refugiado?|Los ascendientes en primer grado, sus descendientes en primer grado, el cónyuge, y otros.|0.75
+¿Qué familiares pueden beneficiarse de mi condición de refugiado?|a) Los ascendientes en primer grado que acreditasen la dependencia y sus descendientes en primer grado que fueran menores de edad, quedando exceptuado el derecho a la extensión familiar en los supuestos de distinta nacionalidad. b) El cónyuge o persona ligada por análoga relación de afectividad y convivencia, salvo en algunos supuestos (divorcio, violencia de género, etcétera) c) Otro adulto que sea responsable del beneficiario de protección internacional, de acuerdo con la legislación española vigente, cuando dicho beneficiario sea un menor no casado. d) Otros miembros de la familia de la persona refugiada o beneficiaria de protección subsidiaria siempre que resulte suficientemente establecida la dependencia respecto de aquellas y la existencia de convivencia previa en el país de origen.|1.0
+¿Cuál es la diferencia entre condición de refugiado, la protección subsidiaria y protección internacional?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Cuál es la diferencia entre condición de refugiado, la protección subsidiaria y protección internacional?|El problema de los refugiados es importante.|0.25
+¿Cuál es la diferencia entre condición de refugiado, la protección subsidiaria y protección internacional?|La condición de refugiado requiere ser perseguido por algún motivo (raza, religión, género, etc.).|0.5
+¿Cuál es la diferencia entre condición de refugiado, la protección subsidiaria y protección internacional?|La condición de refugiado requiere ser perseguido, mientras que la protección subsidiaria no; la protección internacional engloba ambas.|0.75
+¿Cuál es la diferencia entre condición de refugiado, la protección subsidiaria y protección internacional?|La condición de refugiado requiere ser perseguido por algún motivo (raza, religión, género, etc.), mientras que la protección subsidiaria no requiere una persecución a un grupo pero igualmente existe un riesgo de daños al volver al país de origen; la protección internacional engloba los dos conceptos previos.|1.0
+¿Cómo puedo ir a un centro de acogida?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Cómo puedo ir a un centro de acogida?|El problema de los refugiados es importante.|0.25
+¿Cómo puedo ir a un centro de acogida?|Acudiendo a la entidad gestionadora.|0.5
+¿Cómo puedo ir a un centro de acogida?|Puedes acudir a la entidad que gestiona el Programa de Primera Acogida en la provincia donde se encuentre.|0.75
+¿Cómo puedo ir a un centro de acogida?|Es necesario cumplir una serie de requisitos marcados por el Ministerio de Inclusión, Seguridad Social y Migraciones. Si eres solicitante de protección internacional y necesitas acceder a un dispositivo de acogida, puedes acudir a la entidad que gestiona el Programa de Primera Acogida en la provincia donde se encuentre.|1.0
+¿Qué puedo hacer si me encuentro en situación de vulnerabilidad por falta de ingresos económicos o de una vivienda?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Qué puedo hacer si me encuentro en situación de vulnerabilidad por falta de ingresos económicos o de una vivienda?|El problema de los refugiados es importante.|0.25
+¿Qué puedo hacer si me encuentro en situación de vulnerabilidad por falta de ingresos económicos o de una vivienda?|Se te facilitará la ayuda que necesites.|0.5
+¿Qué puedo hacer si me encuentro en situación de vulnerabilidad por falta de ingresos económicos o de una vivienda?|El equipo de inclusión del CEAR (Comisión Española de Ayuda al Refugiado) te facilitará la ayuda adecuada y diseñará contigo un itinerario que promueva tu autonomía personal y tu plena integración social.|0.75
+¿Qué puedo hacer si me encuentro en situación de vulnerabilidad por falta de ingresos económicos o de una vivienda?|Si eres solicitante de asilo, refugiado, apátrida, tienes autorización a permanecer en España por protección internacional o eres inmigrante en situación de vulnerabilidad social, partiendo de tus necesidades, el equipo de inclusión del CEAR (Comisión Española de Ayuda al Refugiado) te facilitará la ayuda adecuada y diseñará contigo un itinerario que promueva tu autonomía personal y tu plena integración social.  Busca tu delegación de CEAR  más cercana para ponerte en contacto.|1.0
+¿Dónde puedo encontrar asesoramiento para buscar empleo, crear una empresa o formación profesional?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Dónde puedo encontrar asesoramiento para buscar empleo, crear una empresa o formación profesional?|El problema de los refugiados es importante.|0.25
+¿Dónde puedo encontrar asesoramiento para buscar empleo, crear una empresa o formación profesional?|En el CEAR (Comisión Española de Ayuda al Refugiado).|0.5
+¿Dónde puedo encontrar asesoramiento para buscar empleo, crear una empresa o formación profesional?|En el CEAR (Comisión Española de Ayuda al Refugiado) te orientan sobre cómo buscar empleo y te facilitan ofertas de empleo según tu perfil.|0.75
+¿Dónde puedo encontrar asesoramiento para buscar empleo, crear una empresa o formación profesional?|En el CEAR (Comisión Española de Ayuda al Refugiado) se orienta sobre cómo buscar empleo y te facilitan ofertas de empleo según tu perfil. También ofrecen cursos profesionales para mejorar tus opciones de encontrar un trabajo. Si lo que quieres es montar una empresa o autoemplearte, te asesoran y facilitan el acceso a ayudas económicas. Busca tu delegación de CEAR  más cercana para ponerte en contacto.|1.0
+¿Qué organizaciones pueden ayudarme?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Qué organizaciones pueden ayudarme?|El problema de los refugiados es importante.|0.25
+¿Qué organizaciones pueden ayudarme?|Hay varias organizaciones que pueden hacerlo.|0.5
+¿Qué organizaciones pueden ayudarme?|CEAR y ACNUR.|0.75
+¿Qué organizaciones pueden ayudarme?|Las organizaciones que pueden ayudar a las personas que requieren de protección internacional son principalmente CEAR (Comisión Española de Ayuda al Refugiado) y ACNUR (Alto Comisionado de las Naciones Unidas para los Refugiados).|1.0
+¿Cuáles son los pasos del procedimiento de asilo?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Cuáles son los pasos del procedimiento de asilo?|El problema de los refugiados es importante.|0.25
+¿Cuáles son los pasos del procedimiento de asilo?|Hay varias fases en el procedimiento.|0.5
+¿Cuáles son los pasos del procedimiento de asilo?|Admisión a trámite, instrucción y resolución.|0.75
+¿Cuáles son los pasos del procedimiento de asilo?|Fase 1: Admisión a trámite. En el plazo de un mes, la OAR le comunicará a la persona si no se ha admitido su solicitud. Si durante este mes, no se han puesto en contacto con la persona solicitante, se entenderá como admitida a trámite. En el caso de que hayas presentado la solicitud en un puesto fronterizo, las autoridades tienen hasta cuatro días para decidir la admisión a trámite. Fase 2:. Instrucción. La OAR examinará en profundidad tu solicitud admitida a trámite. Fase 3: Resolución. Una vez estudiada la solicitud, te comunicarán la resolución de la misma.|1.0
+¿Es confidencial el proceso?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Es confidencial el proceso?|El problema de los refugiados es importante.|0.25
+¿Es confidencial el proceso?|Sí, lo es.|0.5
+¿Es confidencial el proceso?|Sí. Todas las personas están obligadas a mantener la confidencialidad.|0.75
+¿Es confidencial el proceso?|Sí. Todas las personas que hablen contigo (funcionarios, policías, intérpretes, abogados, etc.) están obligadas a mantener la confidencialidad, tanto de tus datos como de todo lo que expongas. Es importante que sepas que nunca se comunicará tu solicitud al gobierno de tu país de origen o de procedencia.|1.0
+¿Puedo contar con la ayuda de un abogado y de un intérprete?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Puedo contar con la ayuda de un abogado y de un intérprete?|El problema de los refugiados es importante.|0.25
+¿Puedo contar con la ayuda de un abogado y de un intérprete?|Sí, se puede.|0.5
+¿Puedo contar con la ayuda de un abogado y de un intérprete?|Los solicitantes de protección internacional tienen derecho a ellos.|0.75
+¿Puedo contar con la ayuda de un abogado y de un intérprete?|Sí. Los solicitantes de protección internacional tienen derecho tanto a asistencia jurídica gratuita como a que se les proporcione un intérprete.|1.0
+¿A qué me da derecho la solicitud de asilo?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿A qué me da derecho la solicitud de asilo?|El problema de los refugiados es importante.|0.25
+¿A qué me da derecho la solicitud de asilo?|Da derecho a múltiples ventajas.|0.5
+¿A qué me da derecho la solicitud de asilo?|A permanecer en España, a la no devolución, y a recibir asistencia sanitaria y jurídica.|0.75
+¿A qué me da derecho la solicitud de asilo?|Ser solicitante de protección internacional te da derecho a permanecer en España de manera regular mientras se resuelve la solicitud. Queda suspendido cualquier proceso de devolución y expulsión del país. También tienes derecho a recibir asistencia jurídica y sanitaria, a acceder al programa de acogida estatal y a ser documentado como solicitante de protección internacional.|1.0
+¿Qué documentación tendré si me aceptan la solicitud?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Qué documentación tendré si me aceptan la solicitud?|El problema de los refugiados es importante.|0.25
+¿Qué documentación tendré si me aceptan la solicitud?|Tendrás varios documentos a lo largo del proceso.|0.5
+¿Qué documentación tendré si me aceptan la solicitud?|La Manifestación de Voluntad de Presentar la Solicitud de Protección Internacional, el Resguardo de presentación de la solicitud de protección internacional, y finalmente la tarjeta roja.|0.75
+¿Qué documentación tendré si me aceptan la solicitud?|El primer documento que tendrás es la Manifestación de Voluntad de Presentar la Solicitud de Protección Internacional. En este papel ya consta el día en que se realizará la entrevista y el lugar, los datos de identidad de la persona interesada, su fotografía y los documentos que tendrá que presentar en la entrevista. Una vez finalizada la entrevista, se entregará el Resguardo de presentación de la solicitud de protección internacional. Es un documento que identifica como solicitante de protección internacional y tiene una duración de un mes prorrogable ocho meses más. Se trata de un documento provisional mientras se estudia la solicitud presentada. Pasados seis meses de la solicitud, este documento otorga una autorización para trabajar. Pasados los nueve meses, tendrás que renovarlo y te entregarán la tarjeta roja. Este documento te identifica como solicitante de protección internacional y permite estar y trabajar en el territorio estatal durante seis meses. Es un documento provisional mientras se estudia la solicitud presentada. Los solicitantes del estatuto de apátrida disponen de un documento verde con foto y un número de identidad de extranjero (NIE), pero no tienen autorización para trabajar.|1.0
+¿Qué prestaciones sociales recibiré?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Qué prestaciones sociales recibiré?|El problema de los refugiados es importante.|0.25
+¿Qué prestaciones sociales recibiré?|Hay la opción de recibir prestaciones.|0.5
+¿Qué prestaciones sociales recibiré?|El Gobierno español dispone de un programa de atención social para las personas solicitantes de protección internacional que no dispongan de recursos económicos para cubrir sus necesidades básicas.|0.75
+¿Qué prestaciones sociales recibiré?|El Gobierno español dispone de un programa de atención social para las personas solicitantes de protección internacional que no dispongan de recursos económicos para cubrir sus necesidades básicas. Para acceder al programa, debes haber iniciado la solicitud de protección internacional en los seis primeros meses desde tu llegada a territorio de la Unión Europea. Debes tener en cuenta que se trata de un dispositivo de acogida estatal, con plazas en todo el territorio español, y es el Gobierno español quien te asignará tu plaza, independientemente de donde hayas iniciado el procedimiento de solicitud de protección internacional.|1.0
+¿Quién y cuándo tomará una decisión sobre mi caso?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Quién y cuándo tomará una decisión sobre mi caso?|El problema de los refugiados es importante.|0.25
+¿Quién y cuándo tomará una decisión sobre mi caso?|Las autoridades responsables.|0.5
+¿Quién y cuándo tomará una decisión sobre mi caso?|Lo decidirá el Ministro del Interior español, a propuesta de la Comisión Interministerial de Asilo y Refugio (CIAR).|0.75
+¿Quién y cuándo tomará una decisión sobre mi caso?|El Gobierno español es la única autoridad competente en materia de asilo y refugio. Lo decidirá el Ministro del Interior español, a propuesta de la Comisión Interministerial de Asilo y Refugio (CIAR). Una vez admitida a trámite la solicitud, debería pronunciarse en un periodo máximo de seis meses. Sin embargo, el proceso suele durar más. Si se retrasa, deben informarte sobre el motivo de la demora. Recuerda que tienes derecho a consultar tu expediente.|1.0
+Si obtengo protección internacional, ¿obtengo también la nacionalidad?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+Si obtengo protección internacional, ¿obtengo también la nacionalidad?|El problema de los refugiados es importante.|0.25
+Si obtengo protección internacional, ¿obtengo también la nacionalidad?|No.|0.5
+Si obtengo protección internacional, ¿obtengo también la nacionalidad?|No, pero puedes solicitarla.|0.75
+Si obtengo protección internacional, ¿obtengo también la nacionalidad?|No, pero si accedes al estatuto de refugiado se reducen los plazos de acceso y puedes solicitarla en cinco años.|1.0
+¿Qué ocurre si me deniegan la petición de asilo?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Qué ocurre si me deniegan la petición de asilo?|El problema de los refugiados es importante.|0.25
+¿Qué ocurre si me deniegan la petición de asilo?|Deberás abandonar España.|0.5
+¿Qué ocurre si me deniegan la petición de asilo?|Deberás abandonar España; se puede recurrir la decisión ante un tribunal.|0.75
+¿Qué ocurre si me deniegan la petición de asilo?|En ese caso, deberás abandonar España, excepto si dispones de algún tipo de autorización de residencia. También puedes recurrir la denegación de tu solicitud de asilo ante un tribunal.|1.0
+¿Va a llover hoy?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Va a llover hoy?|El problema de los refugiados es importante.|0.0
+¿Va a llover hoy?|Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.|1.0
+¿Dónde puedo jugar a fútbol?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Dónde puedo jugar a fútbol?|El problema de los refugiados es importante.|0.0
+¿Dónde puedo jugar a fútbol?|Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.|1.0
+¿Por qué vuelan los pájaros?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Por qué vuelan los pájaros?|El problema de los refugiados es importante.|0.0
+¿Por qué vuelan los pájaros?|Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.|1.0
+¿Cuál es la raíz cuadrada de 16?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Cuál es la raíz cuadrada de 16?|El problema de los refugiados es importante.|0.0
+¿Cuál es la raíz cuadrada de 16?|Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.|1.0
+¿Qué es mejor, un dinosaurio o una ballena?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Qué es mejor, un dinosaurio o una ballena?|El problema de los refugiados es importante.|0.0
+¿Qué es mejor, un dinosaurio o una ballena?|Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.|1.0
+¿Llegará la inteligencia artificial general?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Llegará la inteligencia artificial general?|El problema de los refugiados es importante.|0.0
+¿Llegará la inteligencia artificial general?|Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.|1.0
+¿Tenemos derecho a comernos los animales?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Tenemos derecho a comernos los animales?|El problema de los refugiados es importante.|0.0
+¿Tenemos derecho a comernos los animales?|Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.|1.0
+¿Hay una religión absoluta?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Hay una religión absoluta?|El problema de los refugiados es importante.|0.0
+¿Hay una religión absoluta?|Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.|1.0
+¿Debería afiliarme a un sindicato para defender mis derechos?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Debería afiliarme a un sindicato para defender mis derechos?|El problema de los refugiados es importante.|0.0
+¿Debería afiliarme a un sindicato para defender mis derechos?|Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.|1.0
+¿Es la democracia el mejor sistema político posible?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Es la democracia el mejor sistema político posible?|El problema de los refugiados es importante.|0.0
+¿Es la democracia el mejor sistema político posible?|Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.|1.0
+¿Es España realmente una democracia?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Es España realmente una democracia?|El problema de los refugiados es importante.|0.0
+¿Es España realmente una democracia?|Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.|1.0
+¿Cuál es el mejor género musical?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Cuál es el mejor género musical?|El problema de los refugiados es importante.|0.0
+¿Cuál es el mejor género musical?|Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.|1.0
+¿Debería tener descendencia?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Debería tener descendencia?|El problema de los refugiados es importante.|0.0
+¿Debería tener descendencia?|Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.|1.0
+¿El dinero hace la felicidad?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿El dinero hace la felicidad?|El problema de los refugiados es importante.|0.0
+¿El dinero hace la felicidad?|Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.|1.0
+¿Qué debería priorizar al buscar trabajo: dinero, satisfacción personal, o beneficio social?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Qué debería priorizar al buscar trabajo: dinero, satisfacción personal, o beneficio social?|El problema de los refugiados es importante.|0.0
+¿Qué debería priorizar al buscar trabajo: dinero, satisfacción personal, o beneficio social?|Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.|1.0
+¿Cómo te han desarrollado?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Cómo te han desarrollado?|El problema de los refugiados es importante.|0.0
+¿Cómo te han desarrollado?|Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.|1.0
+¿Quién te ha desarrollado?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Quién te ha desarrollado?|El problema de los refugiados es importante.|0.0
+¿Quién te ha desarrollado?|Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.|1.0
+¿En qué plataforma estas desplegado?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿En qué plataforma estas desplegado?|El problema de los refugiados es importante.|0.0
+¿En qué plataforma estas desplegado?|Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.|1.0
+¿Cuánto cuesta un café?|El menú de hoy son macarrones, pollo a la plancha y flan de huevo.|0.0
+¿Cuánto cuesta un café?|El problema de los refugiados es importante.|0.0
+¿Cuánto cuesta un café?|Disculpa, no dispongo de suficientes datos para contestar a esta pregunta.|1.0
+Can I be considered a refugee?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Can I be considered a refugee?|The problem about refugees is important.|0.25
+Can I be considered a refugee?|You should be out of your country.|0.5
+Can I be considered a refugee?|To be considered a refugee, you must be out of your country for fear|0.75
+Can I be considered a refugee?|To be considered a refugee, you must be outside your country for fear of being persecuted for non-economic reasons (e.g. race, religion, nationality, membership of a social group, political opinions, gender or sexual orientation).|1.0
+Can I have asylum or subsidiary protection?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Can I have asylum or subsidiary protection?|The problem about refugees is important.|0.25
+Can I have asylum or subsidiary protection?|You can if you are not a refugee.|0.5
+Can I have asylum or subsidiary protection?|Yes, if you have a risk of harm upon returning to your country.|0.75
+Can I have asylum or subsidiary protection?|You may have it if upon returning to your home country you have a real risk of harm, even if you are not a refugee.|1.0
+Can I be deported if I have sought asylum?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Can I be deported if I have sought asylum?|The problem about refugees is important.|0.25
+Can I be deported if I have sought asylum?|No.|0.5
+Can I be deported if I have sought asylum?|No, you can not be if you requested asylum.|0.75
+Can I be deported if I have sought asylum?|Until there is a final decision, a person who has sought asylum cannot be deported.|1.0
+Where can I apply for asylum or international protection in Spain?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Where can I apply for asylum or international protection in Spain?|The problem about refugees is important.|0.25
+Where can I apply for asylum or international protection in Spain?|In both Spain and outside of it.|0.5
+Where can I apply for asylum or international protection in Spain?|You can do so at border ports, CIE or police stations.|0.75
+Where can I apply for asylum or international protection in Spain?|You can do so at border posts, at airports and international ports. Also at the CIE. Within the Spanish territory, in authorized police stations, Offices of Foreign Affairs and OAR (Oficina de Asilo y Refugio).|1.0
+Can I apply for asylum or international protection outside of Spain?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Can I apply for asylum or international protection outside of Spain?|The problem about refugees is important.|0.25
+Can I apply for asylum or international protection outside of Spain?|Yes.|0.5
+Can I apply for asylum or international protection outside of Spain?|Yes, you should go to the authorities.|0.75
+Can I apply for asylum or international protection outside of Spain?|Yes, it is necessary that the authorities of the Spanish Diplomatic Representation be addressed on the grounds of a danger to their physical integrity. The respective Ambassadors will be able to promote their transfer to Spain to allow their request to be submitted.|1.0
+What happens when submitting the application?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+What happens when submitting the application?|The problem about refugees is important.|0.25
+What happens when submitting the application?|The person is informed about the procedure.|0.5
+What happens when submitting the application?|At the time of the application, the foreign person will be informed about the procedure to follow, together with their rights and obligations.|0.75
+What happens when submitting the application?|At the time of the application, the foreign person shall be informed, in a language that he may understand, of: (a) The procedure to be followed and the confidential nature of the request. (b) Their rights and obligations during processing, especially in terms of time and means. (c) The possibility of contacting the United Nations High Commissioner for Refugees and the legally recognized non-governmental organizations whose objectives include advice and assistance to persons in need of international protection. (d) The potential consequences of non-compliance with their obligations or lack of cooperation with the authorities. (e) The social rights and benefits to which it has access as an applicant for international protection.|1.0
+What if I can't phisically attend to do the request?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+What if I can't phisically attend to do the request?|The problem about refugees is important.|0.25
+What if I can't phisically attend to do the request?|You can phisically attend another day.|0.5
+What if I can't phisically attend to do the request?|Another person should attend.|0.75
+What if I can't phisically attend to do the request?|Then, another person should attend phisically on your behalf. In this case, the applicant must ratify the petition once the impediment is over.|1.0
+Where do I have to go to get assistance?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Where do I have to go to get assistance?|The problem about refugees is important.|0.25
+Where do I have to go to get assistance?|There is information in the following link: https://help.unhcr.org/spain/donde-encontrar-ayuda-espana/asistencia-legal/|0.5
+Where do I have to go to get assistance?|There are organizations that provide free assistance; for more information: https://help.unhcr.org/spain/donde-encontrar-ayuda-espana/asistencia-legal/|0.75
+Where do I have to go to get assistance?|Applicants of international protection will have the right to health care and free legal assistance from the state. In addition, there are organizations that provide free legal assistance and guidance on the Spanish asylum procedure, as well as social assistance services, job search, housing... In this link you can find some NGOs where you can find help and guidance: https://help.unhcr.org/spain/where-to find-help-spana/legal/legal/resistance|1.0
+How can I meet with my family if they are in our country of origin?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+How can I meet with my family if they are in our country of origin?|The problem about refugees is important.|0.25
+How can I meet with my family if they are in our country of origin?|UNHCR can help.|0.5
+How can I meet with my family if they are in our country of origin?|The Office of UNHCR in Spain will be able to help depending on the country of origin in which family members are present.|0.75
+How can I meet with my family if they are in our country of origin?|By being recognized as a refugee or beneficiary of subsidiary protection, the Office of UNHCR in Spain will be able to help depending on the country of origin in which family members are present and in the necessary procedures to carry out it.|1.0
+How can I return to my country of origin?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+How can I return to my country of origin?|The problem about refugees is important.|0.25
+How can I return to my country of origin?|Going to the authorities.|0.5
+How can I return to my country of origin?|You must go to the Spanish asylum authorities to receive information.|0.75
+How can I return to my country of origin?|If you have been recognized as a refugee or beneficiary of subsidiary protection, you must go to the Spanish asylum authorities to receive information about the procedures and programs in Spain for voluntary return.|1.0
+Can I resettle in Spain?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Can I resettle in Spain?|The problem about refugees is important.|0.25
+Can I resettle in Spain?|It is possible to do so|0.5
+Can I resettle in Spain?|Yes. For more information, visit: https://www.acnur.org/es-es/acnur-en-espana/nuestro-trabajo|0.75
+Can I resettle in Spain?|Spain will determine on an annual basis the number of people who may be resettled. For further information, see https://www.acnur.org/en-es/acnur-en-espana/nuestro-working|1.0
+When should I apply for refugee status, asylum or subsidy?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+When should I apply for refugee status, asylum or subsidy?|The problem about refugees is important.|0.25
+When should I apply for refugee status, asylum or subsidy?|Without delay.|0.5
+When should I apply for refugee status, asylum or subsidy?|You have to attend phisically to the regulatory sites without delay or within a maximum period of one month.|0.75
+When should I apply for refugee status, asylum or subsidy?|You have to attend phisically to the regulatory sites without delay or within a maximum period of one month from the entry into the Spanish territory or, if applicable, since events justifying the well-founded fear of persecution or serious damage appear.|1.0
+What are my rights as an applicant?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+What are my rights as an applicant?|The problem about refugees is important.|0.25
+What are my rights as an applicant?|Your rights as an applicant are several.|0.5
+What are my rights as an applicant?|To be documented as an international protection seeker, to free legal assistance and interpreter, and to have no extradition.|0.75
+What are my rights as an applicant?|a) to be documented as an international protection seeker; (b) to free legal assistance and interpreter; (c) to communicate your request to UNHCR; (d) to suspend any process of return, expulsion or extradition that might affect the applicant; (e) to know the contents of the file at any time; (f) to benefit from health care services under the conditions set forth; (g) to receive specific social benefits in the terms provided for.|1.0
+What are my obligations as an applicant?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+What are my obligations as an applicant?|The problem about refugees is important.|0.25
+What are my obligations as an applicant?|The obligations as an applicant are several.|0.5
+What are my obligations as an applicant?|Cooperate with the Spanish authorities in the procedure, submit all elements for the request, and appear before the authorities upon request.|0.75
+What are my obligations as an applicant?|a) to cooperate with the Spanish authorities in the procedure for the granting of international protection; b) to submit, as soon as possible, all those elements that, together with their own declaration, contribute to substantiate their request. Among others, they may submit the documentation of their age, past, including that of related relatives, identity, nationality or nationalities, places of prior residence, requests for international protection, travel itineraries, travel documents and reasons for which they request protection; c) provide their fingerprints, allow them to be photographed and, where appropriate, consent to the recording of their statements, provided that they have been previously informed; d) inform about your home address in Spain and any changes related to it; e) also inform the competent authorities or appear before it, where required under any circumstances of your request|1.0
+How long do I have to wait for the application to be resolved?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+How long do I have to wait for the application to be resolved?|The problem about refugees is important.|0.25
+How long do I have to wait for the application to be resolved?|Several months.|0.5
+How long do I have to wait for the application to be resolved?|The resolution period is six months.|0.75
+How long do I have to wait for the application to be resolved?|The resolution period is six months. If the resolution has not been notified at this time, it is understood that it has been rejected.|1.0
+How is the resolution of the request communicated?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+How is the resolution of the request communicated?|The problem about refugees is important.|0.25
+How is the resolution of the request communicated?|You will be notified by several channels.|0.5
+How is the resolution of the request communicated?|For communications and notifications purposes, the last address or residence provided will be taken into account.|0.75
+How is the resolution of the request communicated?|For communications and notifications purposes, the last address or residence provided will be taken into account. When this notification procedure is not successful, the procedure will be carried out through the Citizen App's Portal, the electronic portal of the Office of Asylum and Refugio and the advertising boards, accessible to the public, og the corresponding police station or the Office of Foreigners of the province in which the last place of residence of the applicant and, in any case, the OAR (Oficina de Asilo y Refugio).|1.0
+What family members can benefit from my refugee status?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+What family members can benefit from my refugee status?|The problem about refugees is important.|0.25
+What family members can benefit from my refugee status?|There are several family members that can benefit from it.|0.5
+What family members can benefit from my refugee status?|The first-degree ascendants and first-degree descendats, the couple and others.|0.75
+What family members can benefit from my refugee status?|The first-degree ascendants who accredited the unit and first-degree descendants who are minors, with the exception of different nationality. (b) The couple or person linked by a similar relationship of affection and coexistence, except in some cases (divorce, gender-based violence, etc.) c) Another adult who is responsible for the international protection beneficiary, in accordance with the Spanish legislation in force, when the beneficiary is an unmarried minor. (d) Other members of the family of the refugee or beneficiary of subsidiary protection provided that dependency on those and the existence of prior coexistence in the country of origin is sufficiently established.|1.0
+What is the difference between refugee status, subsidiary protection and international protection?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+What is the difference between refugee status, subsidiary protection and international protection?|The problem about refugees is important.|0.25
+What is the difference between refugee status, subsidiary protection and international protection?|The refugee status requires persecution for some reason (race, religion, gender, etc.).|0.5
+What is the difference between refugee status, subsidiary protection and international protection?|The refugee status requires persecution, whereas subsidiary protection does not; international protection encompasses the formers.|0.75
+What is the difference between refugee status, subsidiary protection and international protection?|The refugee status requires persecution for some reason (race, religion, gender, etc.), while subsidiary protection does not require persecution of a group but still the person is at risk when returning to the country of origin; international protection encompasses the two previous concepts.|1.0
+How can I go to a reception centre?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+How can I go to a reception centre?|The problem about refugees is important.|0.25
+How can I go to a reception centre?|Going to the entity that manages them.|0.5
+How can I go to a reception centre?|You can go to the entity that manages the First Accepted Program in the province where it is located.|0.75
+How can I go to a reception centre?|You need to meet a number of requirements set by the Ministry of Inclusion, Social Security and Migration. If you are an internacional protection applicant, you can go to the entity that manages the First Accepted Program in the province where it is located.|1.0
+What can I do if I find myself in a situation of vulnerability due to lack of economic income or housing?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+What can I do if I find myself in a situation of vulnerability due to lack of economic income or housing?|The problem about refugees is important.|0.25
+What can I do if I find myself in a situation of vulnerability due to lack of economic income or housing?|You will be provided the assistance that you need.|0.5
+What can I do if I find myself in a situation of vulnerability due to lack of economic income or housing?|The CEAR Inclusion Team (Comisión Española de Ayuda al Refugiado) will provide you with adequate assistance and will design with you an itinerary that promotes your personal autonomy and your full social integration.|0.75
+What can I do if I find myself in a situation of vulnerability due to lack of economic income or housing?|If you are an asylum seeker, a refugee, a stateless person, you are authorized to stay in Spain for international protection or are an immigrant in a situation of social vulnerability, based on your needs, the CEAR Inclusion Team (Comisión Española de Ayuda al Refugiado) will provide you with adequate assistance and will design with you an itinerary that promotes your personal autonomy and your full social integration. Find your nearest CEAR delegation to contact them.|1.0
+Where can I find advice to find employment, create a company or vocational training?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Where can I find advice to find employment, create a company or vocational training?|The problem about refugees is important.|0.25
+Where can I find advice to find employment, create a company or vocational training?|At the CEAR (Comisión Española de Ayuda al Refugiado).|0.5
+Where can I find advice to find employment, create a company or vocational training?|The CEAR (Comisión Española de Ayuda al Refugiado) focus on how to look for employment and provide you with job offers according to your profile.|0.75
+Where can I find advice to find employment, create a company or vocational training?|The CEAR (Comisión Española de Ayuda al Refugiado) focus on how to look for employment and provide you with job offers according to your profile. They also offer professional courses to improve your options to find a job. If you want to set up a company or self-employment, they advise you and facilitate access to economic aid. Find your nearest CEAR delegation to contact them.|1.0
+What organizations can help me?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+What organizations can help me?|The problem about refugees is important.|0.25
+What organizations can help me?|There are several organizations that can do that.|0.5
+What organizations can help me?|CEAR and UNHCR|0.75
+What organizations can help me?|Organizations that can help people who need international protection are mainly CEAR (Comisión Española de Ayuda al Refugiado) and UNHCR (United Nations High Commissioner for Refugees).|1.0
+What are the steps of the asylum procedure?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+What are the steps of the asylum procedure?|The problem about refugees is important.|0.25
+What are the steps of the asylum procedure?|There are several phases in the procedure.|0.5
+What are the steps of the asylum procedure?|Admission to processing, instruction and resolution.|0.75
+What are the steps of the asylum procedure?|First phase: Admission to processing. Within one month, the OAR will notify the person if the request has not been accepted. If during this month, they have not contacted the applicant, it will be understood as admitted to the proceedings. In the event that you have filed a request at a border post, the authorities have up to four days to decide on admission to the proceedings. Phase 2: Instruction. The OAR will examine in depth your application admitted to processing. Phase 3. Resolution. Once the request has been studied, you will be informed of the resolution.|1.0
+Is the process confidential?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Is the process confidential?|The problem about refugees is important.|0.25
+Is the process confidential?|Yes, it is.|0.5
+Is the process confidential?|Yes. All people are obliged to keep the confidentiality.|0.75
+Is the process confidential?|All people who talk to you (workers, police, interpreters, lawyers, etc.) are obliged to keep the confidentiality of both your data and everything you're exposing. It is important that you know that your request will never be communicated to the government of your country of origin.|1.0
+Can I have the help of a lawyer and an interpreter?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Can I have the help of a lawyer and an interpreter?|The problem about refugees is important.|0.25
+Can I have the help of a lawyer and an interpreter?|Yes, you can.|0.5
+Can I have the help of a lawyer and an interpreter?|International protection applicants can.|0.75
+Can I have the help of a lawyer and an interpreter?|International protection applicants are entitled to free legal assistance and to an interpreter.|1.0
+What am I entitled to the asylum application?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+What am I entitled to the asylum application?|The problem about refugees is important.|0.25
+What am I entitled to the asylum application?|You have several rights.|0.5
+What am I entitled to the asylum application?|The right to stay in Spain, to no expulsion, and to receive legal and health assistance.|0.75
+What am I entitled to the asylum application?|Being an international protection applicant gives you the right to stay in Spain on a regular basis while the application is resolved. Any process of refoulement and expulsion from the country is suspended. You also have the right to receive legal and health assistance, to access the state host program and to be documented as an international protection applicant.|1.0
+What documentation will I have if I am accepted?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+What documentation will I have if I am accepted?|The problem about refugees is important.|0.25
+What documentation will I have if I am accepted?|You will have several documents throughout the procedure.|0.5
+What documentation will I have if I am accepted?|The Manifestation of Will to Present the Application for International Protection, Reservoir for the presentation of the request for international protection, and eventually the red card.|0.75
+What documentation will I have if I am accepted?|The first document you will have is the Manifestation of Will to Present the Application for International Protection. This paper already includes the day on which the interview will take place and the place, the identity data of the person concerned, their photograph and the documents to be presented in the interview. Once the interview is completed, the Reservoir for the presentation of the request for international protection will be delivered. It is a document that identifies as an international protection applicant and lasts for an additional eight months. This is an interim document while the application is being considered. After six months of the application, this document grants authorization to work. After nine months, you'll have to renew it and they'll give you the red card. This document identifies you as an international protection applicant and allows you to be and work in the state territory for six months. It is an interim document while the application is being considered. Applicants of statelessness have a green photo document and a foreign identity number (NIE), but have no authorization to work.|1.0
+What social benefits will I receive?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+What social benefits will I receive?|The problem about refugees is important.|0.25
+What social benefits will I receive?|There is the possibility to receive social benefits.|0.5
+What social benefits will I receive?|The Spanish Government has a social care programme for applicants for international protection who do not have economic resources to meet their basic needs.|0.75
+What social benefits will I receive?|The Spanish Government has a social care programme for applicants for international protection who do not have economic resources to meet their basic needs. In order to access the program, you must have initiated the application for international protection in the first six months of your arrival in the territory of the European Union. You must bear in mind that this is a state-of-the-art host device, with places throughout the Spanish territory, and it is the Spanish Government that will assign your place to you, regardless of where you have initiated the procedure for applying for international protection.|1.0
+Who and when will make a decision on my case?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Who and when will make a decision on my case?|The problem about refugees is important.|0.25
+Who and when will make a decision on my case?|The competent authorities.|0.5
+Who and when will make a decision on my case?|the Spanish Minister of the Interior, on the proposal of the Comisión Interministerial de Asilo y Refugio (CIAR)|0.75
+Who and when will make a decision on my case?|The Spanish Government is the only competent authority in the field of asylum and refuge. It will be decided by the Spanish Minister of the Interior, on the proposal of the Comisión Interministerial de Asilo y Refugio (CIAR). Once the application has been accepted, it should be pronounced within a maximum period of six months. However, the process usually lasts longer. If you're late, you should be informed about the reason for the delay. Remember you have the right to consult your file.|1.0
+If I get international protection, do I also have nationality?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+If I get international protection, do I also have nationality?|The problem about refugees is important.|0.25
+If I get international protection, do I also have nationality?|No.|0.5
+If I get international protection, do I also have nationality?|No. but you can apply for it.|0.75
+If I get international protection, do I also have nationality?|No, but if you obtain the refugee status, the access deadlines are reduced and you can apply for it in five years.|1.0
+What happens if I am denied asylum?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+What happens if I am denied asylum?|The problem about refugees is important.|0.25
+What happens if I am denied asylum?|You must leave Spain.|0.5
+What happens if I am denied asylum?|You must leave Spain; you can resort the denial in court.|0.75
+What happens if I am denied asylum?|In that case, you must leave Spain, except if you have any residence authorization. You can also resort to denial of your asylum application in court.|1.0
+Is it going to rain today?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Is it going to rain today?|The problem about refugees is important.|0.0
+Is it going to rain today?|Excuse me, I don't have enough data to answer this question.|1.0
+Where can I play football?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Where can I play football?|The problem about refugees is important.|0.0
+Where can I play football?|Excuse me, I don't have enough data to answer this question.|1.0
+Why do birds fly?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Why do birds fly?|The problem about refugees is important.|0.0
+Why do birds fly?|Excuse me, I don't have enough data to answer this question.|1.0
+What is the square root of 16?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+What is the square root of 16?|The problem about refugees is important.|0.0
+What is the square root of 16?|Excuse me, I don't have enough data to answer this question.|1.0
+What's better, a dinosaur or a whale?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+What's better, a dinosaur or a whale?|The problem about refugees is important.|0.0
+What's better, a dinosaur or a whale?|Excuse me, I don't have enough data to answer this question.|1.0
+Will general artificial intelligence arrive?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Will general artificial intelligence arrive?|The problem about refugees is important.|0.0
+Will general artificial intelligence arrive?|Excuse me, I don't have enough data to answer this question.|1.0
+Do we have the right to eat animals?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Do we have the right to eat animals?|The problem about refugees is important.|0.0
+Do we have the right to eat animals?|Excuse me, I don't have enough data to answer this question.|1.0
+Is there an absolute religion?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Is there an absolute religion?|The problem about refugees is important.|0.0
+Is there an absolute religion?|Excuse me, I don't have enough data to answer this question.|1.0
+Should I join a trade union to defend my rights?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Should I join a trade union to defend my rights?|The problem about refugees is important.|0.0
+Should I join a trade union to defend my rights?|Excuse me, I don't have enough data to answer this question.|1.0
+Is democracy the best possible political system?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Is democracy the best possible political system?|The problem about refugees is important.|0.0
+Is democracy the best possible political system?|Excuse me, I don't have enough data to answer this question.|1.0
+Is Spain really a democracy?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Is Spain really a democracy?|The problem about refugees is important.|0.0
+Is Spain really a democracy?|Excuse me, I don't have enough data to answer this question.|1.0
+What is the best musical genre?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+What is the best musical genre?|The problem about refugees is important.|0.0
+What is the best musical genre?|Excuse me, I don't have enough data to answer this question.|1.0
+Should I have offspring?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Should I have offspring?|The problem about refugees is important.|0.0
+Should I have offspring?|Excuse me, I don't have enough data to answer this question.|1.0
+Does money make happiness?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Does money make happiness?|The problem about refugees is important.|0.0
+Does money make happiness?|Excuse me, I don't have enough data to answer this question.|1.0
+What should be prioritised when looking for work: money, personal satisfaction, or social benefit?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+What should be prioritised when looking for work: money, personal satisfaction, or social benefit?|The problem about refugees is important.|0.0
+What should be prioritised when looking for work: money, personal satisfaction, or social benefit?|Excuse me, I don't have enough data to answer this question.|1.0
+How have you been developed?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+How have you been developed?|The problem about refugees is important.|0.0
+How have you been developed?|Excuse me, I don't have enough data to answer this question.|1.0
+Who has developed you?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+Who has developed you?|The problem about refugees is important.|0.0
+Who has developed you?|Excuse me, I don't have enough data to answer this question.|1.0
+On which platform are you deployed?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+On which platform are you deployed?|The problem about refugees is important.|0.0
+On which platform are you deployed?|Excuse me, I don't have enough data to answer this question.|1.0
+How much does a coffee cost?|Today's menu is: spaguetti, chicken breast and youghurt.|0.0
+How much does a coffee cost?|The problem about refugees is important.|0.0
+How much does a coffee cost?|Excuse me, I don't have enough data to answer this question.|1.0
