@@ -3,6 +3,10 @@
 ![image](https://github.com/user-attachments/assets/6834d2c5-b3a1-4745-8096-d865d77a89be)
 
 
+![image](https://github.com/user-attachments/assets/04f65c74-fd02-4137-9573-6f93b16f27c1)
+![image](https://github.com/user-attachments/assets/5973511d-7976-4834-9ad1-5d6b0fb04569)
+
+
 This is the code used by the *refugee chatbot*.
 
 Its objective is to help refugees recently arrived to Spain, with any question
